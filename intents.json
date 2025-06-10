@@ -1,0 +1,663 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Greetings",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Yo",
+        "What's up",
+        "Hey bot"
+      ],
+      "responses": [
+        "Hello! How can I help you with GitHub today?",
+        "Hi there! Need help with GitHub?",
+        "Hey! What GitHub topic can I assist you with?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "I have to go",
+        "Catch you later",
+        "Cya"
+      ],
+      "responses": [
+        "Goodbye! Happy coding on GitHub!",
+        "See you next time. Don't forget to commit your changes!",
+        "Bye! Let me know if you need more GitHub help."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Much appreciated",
+        "Cheers",
+        "You're helpful"
+      ],
+      "responses": [
+        "You're welcome! Let me know if you have more GitHub questions.",
+        "Happy to help with GitHub!",
+        "Anytime! Good luck with your repositories."
+      ]
+    },
+    {
+      "tag": "github_intro",
+      "patterns": [
+        "What is GitHub?",
+        "Explain GitHub",
+        "Tell me about GitHub",
+        "Purpose of GitHub",
+        "Why use GitHub?"
+      ],
+      "responses": [
+        "GitHub is a web-based platform for version control and collaboration, built around Git. It lets you and others work together on projects from anywhere.",
+        "GitHub hosts your code in repositories and provides tools for collaboration, issue tracking, and code review."
+      ]
+    },
+    {
+      "tag": "git_vs_github",
+      "patterns": [
+        "Difference between Git and GitHub",
+        "Git vs GitHub",
+        "Is GitHub the same as Git?",
+        "What is Git?",
+        "What is the difference between Git and GitHub?"
+      ],
+      "responses": [
+        "Git is a distributed version control system for tracking changes in source code. GitHub is a cloud-based hosting service that lets you manage Git repositories and collaborate with others.",
+        "Git is the tool, GitHub is the platform built on top of Git for sharing and collaborating."
+      ]
+    },
+    {
+      "tag": "create_repo",
+      "patterns": [
+        "How to create a repository?",
+        "Create new repo",
+        "Make a GitHub repository",
+        "Start a new project on GitHub",
+        "How do I start a repo?"
+      ],
+      "responses": [
+        "To create a repository: Log in to GitHub, click the '+' icon in the top right, select 'New repository', fill in the details, and click 'Create repository'.",
+        "You can also create a repo using the GitHub CLI: `gh repo create`."
+      ]
+    },
+    {
+      "tag": "clone_repo",
+      "patterns": [
+        "How to clone a repository?",
+        "Clone repo",
+        "Download code from GitHub",
+        "Get a copy of a GitHub project",
+        "How do I clone a repo?"
+      ],
+      "responses": [
+        "To clone a repository, copy its URL and run: `git clone <repo-url>` in your terminal.",
+        "You can also use GitHub Desktop or the GitHub CLI to clone repositories."
+      ]
+    },
+    {
+      "tag": "commit_push",
+      "patterns": [
+        "How to commit changes?",
+        "How to push code?",
+        "Save changes to GitHub",
+        "Commit and push",
+        "How do I upload my code?"
+      ],
+      "responses": [
+        "First, stage your changes with `git add .`, then commit with `git commit -m 'your message'`, and push with `git push origin main`.",
+        "Make sure you have write access to the repository before pushing."
+      ]
+    },
+    {
+      "tag": "pull_request",
+      "patterns": [
+        "What is a pull request?",
+        "How to make a pull request?",
+        "Submit changes for review",
+        "PR on GitHub",
+        "How do I create a PR?"
+      ],
+      "responses": [
+        "A pull request (PR) lets you propose changes to a repository. Others can review, discuss, and merge your changes.",
+        "To create a PR: Push your branch, go to the repository on GitHub, and click 'Compare & pull request'."
+      ]
+    },
+    {
+      "tag": "fork_repo",
+      "patterns": [
+        "What is forking?",
+        "How to fork a repository?",
+        "Fork vs clone",
+        "Why fork a repo?",
+        "How do I fork a project?"
+      ],
+      "responses": [
+        "Forking creates a personal copy of someone else's repository under your GitHub account. You can make changes without affecting the original.",
+        "Use the 'Fork' button on the repository page to fork a repo."
+      ]
+    },
+    {
+      "tag": "issues",
+      "patterns": [
+        "What are GitHub issues?",
+        "How to report a bug?",
+        "Track tasks on GitHub",
+        "Open an issue",
+        "How do I create an issue?"
+      ],
+      "responses": [
+        "GitHub Issues are used to track bugs, enhancements, or tasks. Click the 'Issues' tab in a repo to create or view issues.",
+        "You can assign, label, and comment on issues to collaborate with your team."
+      ]
+    },
+    {
+      "tag": "actions",
+      "patterns": [
+        "What are GitHub Actions?",
+        "How to automate workflows?",
+        "CI/CD on GitHub",
+        "Set up GitHub Actions",
+        "How do I use Actions?"
+      ],
+      "responses": [
+        "GitHub Actions lets you automate workflows like building, testing, and deploying code. Workflows are defined in YAML files in the `.github/workflows` directory.",
+        "You can use pre-built actions or create your own for custom automation."
+      ]
+    },
+    {
+      "tag": "pages",
+      "patterns": [
+        "What is GitHub Pages?",
+        "How to make a website with GitHub?",
+        "Host static site on GitHub",
+        "Deploy website using GitHub Pages",
+        "How do I publish a site?"
+      ],
+      "responses": [
+        "GitHub Pages is a free service to host static websites directly from your repository. Push your HTML, CSS, and JS files to a branch (often `gh-pages` or `main`) and enable Pages in the repo settings.",
+        "You can use Jekyll or other static site generators with GitHub Pages."
+      ]
+    },
+    {
+      "tag": "collaborators",
+      "patterns": [
+        "How to add collaborators?",
+        "Share repo with others",
+        "Invite someone to my repository",
+        "Give access to my GitHub project",
+        "How do I add a team member?"
+      ],
+      "responses": [
+        "Go to your repository's 'Settings' > 'Collaborators and teams', then invite users by their GitHub username or email.",
+        "Collaborators can push, pull, and manage issues depending on their permissions."
+      ]
+    },
+    {
+      "tag": "branching",
+      "patterns": [
+        "What is a branch?",
+        "How to create a branch?",
+        "Branching strategy",
+        "Switch branches in GitHub",
+        "How do I merge branches?"
+      ],
+      "responses": [
+        "A branch is a parallel version of your repository. Use `git branch <branch-name>` to create and `git checkout <branch-name>` to switch.",
+        "Branches are used to develop features, fix bugs, or experiment safely."
+      ]
+    },
+    {
+      "tag": "merge_conflict",
+      "patterns": [
+        "What is a merge conflict?",
+        "How to resolve merge conflicts?",
+        "Merge conflict in GitHub",
+        "Fix conflicting changes",
+        "Why do I get merge conflicts?"
+      ],
+      "responses": [
+        "A merge conflict happens when changes in different branches overlap. Git will mark the conflict in your files. Edit the files to resolve, then add and commit the resolved files.",
+        "After resolving, run `git add .` and `git commit`, then continue your merge or rebase."
+      ]
+    },
+    {
+      "tag": "private_public_repo",
+      "patterns": [
+        "Difference between private and public repo",
+        "How to make a repo private?",
+        "Can I share a private repository?",
+        "Public vs private repositories",
+        "How do I change repo visibility?"
+      ],
+      "responses": [
+        "Public repositories are visible to everyone. Private repositories are only accessible to you and invited collaborators.",
+        "You can change a repo's visibility in the repository settings."
+      ]
+    },
+    {
+      "tag": "github_cli",
+      "patterns": [
+        "What is GitHub CLI?",
+        "How to use gh command?",
+        "Install GitHub CLI",
+        "GitHub CLI features",
+        "What can I do with gh?"
+      ],
+      "responses": [
+        "GitHub CLI (`gh`) is a command-line tool to interact with GitHub from your terminal. You can create issues, pull requests, and more.",
+        "Install it from https://cli.github.com and run `gh help` for available commands."
+      ]
+    },
+    {
+      "tag": "security",
+      "patterns": [
+        "How to secure my repository?",
+        "What are GitHub security features?",
+        "Enable 2FA on GitHub",
+        "Security best practices",
+        "How do I protect my code?"
+      ],
+      "responses": [
+        "Enable two-factor authentication (2FA), use strong passwords, and keep your dependencies updated. GitHub also provides Dependabot alerts and secret scanning.",
+        "Review your repository's security settings and use CODEOWNERS for code review requirements."
+      ]
+    },
+    {
+      "tag": "github_packages",
+      "patterns": [
+        "What is GitHub Packages?",
+        "How to publish a package?",
+        "Use GitHub as a package registry",
+        "Store Docker images on GitHub",
+        "How do I use GitHub Packages?"
+      ],
+      "responses": [
+        "GitHub Packages is a package hosting service for npm, Docker, Maven, NuGet, and more. You can publish and consume packages directly from your repositories.",
+        "See https://docs.github.com/en/packages for setup instructions."
+      ]
+    },
+    {
+      "tag": "github_discussions",
+      "patterns": [
+        "What are GitHub Discussions?",
+        "How to start a discussion?",
+        "Forum on GitHub",
+        "Community support on GitHub",
+        "How do I enable Discussions?"
+      ],
+      "responses": [
+        "GitHub Discussions is a forum for open-ended conversations in your repository. Enable it in your repo settings and use it for Q&A, ideas, or announcements.",
+        "Discussions are separate from issues and are great for community engagement."
+      ]
+    },
+    {
+      "tag": "github_marketplace",
+      "patterns": [
+        "What is GitHub Marketplace?",
+        "Find GitHub apps",
+        "Integrate tools with GitHub",
+        "Marketplace features",
+        "How do I use Marketplace?"
+      ],
+      "responses": [
+        "GitHub Marketplace offers apps and actions to enhance your workflow, like CI/CD, code quality, and project management tools.",
+        "Browse at https://github.com/marketplace."
+      ]
+    },
+    {
+      "tag": "github_support",
+      "patterns": [
+        "How to contact GitHub support?",
+        "GitHub help",
+        "Report a problem to GitHub",
+        "GitHub customer service",
+        "How do I get help from GitHub?"
+      ],
+      "responses": [
+        "You can contact GitHub Support at https://support.github.com or use the 'Contact support' link in your account menu.",
+        "For community help, visit https://github.community."
+      ]
+    },
+    {
+      "tag": "github_status",
+      "patterns": [
+        "Is GitHub down?",
+        "GitHub status",
+        "Check GitHub uptime",
+        "Is GitHub working?",
+        "How do I check GitHub status?"
+      ],
+      "responses": [
+        "You can check GitHub's current status at https://www.githubstatus.com.",
+        "If you're experiencing issues, visit the status page for real-time updates."
+      ]
+    },
+    {
+      "tag": "github_api",
+      "patterns": [
+        "What is the GitHub API?",
+        "How to use GitHub API?",
+        "REST API for GitHub",
+        "GraphQL on GitHub",
+        "How do I access GitHub programmatically?"
+      ],
+      "responses": [
+        "GitHub provides both REST and GraphQL APIs for programmatic access to repositories, issues, pull requests, and more.",
+        "See https://docs.github.com/en/rest and https://docs.github.com/en/graphql for documentation."
+      ]
+    },
+    {
+      "tag": "github_actions_examples",
+      "patterns": [
+        "Example of GitHub Actions workflow",
+        "Sample CI/CD pipeline",
+        "How to write a workflow file?",
+        "YAML for GitHub Actions",
+        "Show me a GitHub Actions example"
+      ],
+      "responses": [
+        "Here's a simple workflow example:\n```yaml\nname: CI\non: [push]\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: Set up Python\n        uses: actions/setup-python@v2\n        with:\n          python-version: '3.8'\n      - name: Install dependencies\n        run: pip install -r requirements.txt\n      - name: Run tests\n        run: pytest\n```"
+      ]
+    },
+    {
+      "tag": "github_best_practices",
+      "patterns": [
+        "Best practices for GitHub",
+        "How to organize repositories?",
+        "Tips for open source projects",
+        "How to write good README?",
+        "What are good GitHub habits?"
+      ],
+      "responses": [
+        "Best practices include: writing clear README files, using descriptive commit messages, creating CONTRIBUTING.md, using issues and pull requests for collaboration, and keeping your repository organized.",
+        "For open source, add a LICENSE file and a CODE_OF_CONDUCT.md."
+      ]
+    },
+    {
+      "tag": "github_troubleshooting",
+      "patterns": [
+        "Why can't I push to my repo?",
+        "Permission denied on GitHub",
+        "How to fix authentication error?",
+        "SSH key issues",
+        "Why is my push rejected?"
+      ],
+      "responses": [
+        "Common reasons: missing write permissions, incorrect SSH key, or authentication issues. Make sure your SSH key is added to your GitHub account and you have the right access.",
+        "Check your remote URL with `git remote -v` and ensure you're using the correct protocol (HTTPS or SSH)."
+      ]
+    },
+    {
+      "tag": "github_ssh_setup",
+      "patterns": [
+        "How to set up SSH for GitHub?",
+        "Add SSH key to GitHub",
+        "SSH authentication GitHub",
+        "Generate SSH key",
+        "How do I use SSH with GitHub?"
+      ],
+      "responses": [
+        "Generate a new SSH key with `ssh-keygen -t ed25519 -C 'your_email@example.com'`, then add the public key to your GitHub account under Settings > SSH and GPG keys.",
+        "Test your connection with `ssh -T git@github.com`."
+      ]
+    },
+    {
+      "tag": "github_gist",
+      "patterns": [
+        "What is a GitHub Gist?",
+        "How to create a gist?",
+        "Share code snippets",
+        "Gist vs repository",
+        "How do I use Gist?"
+      ],
+      "responses": [
+        "GitHub Gist is a simple way to share code snippets, notes, or any text. You can create public or secret gists at https://gist.github.com.",
+        "Gists are great for sharing single files or small pieces of code."
+      ]
+    },
+    {
+      "tag": "github_notifications",
+      "patterns": [
+        "How to manage notifications?",
+        "GitHub email alerts",
+        "Mute notifications",
+        "Notification settings",
+        "How do I get notified about changes?"
+      ],
+      "responses": [
+        "You can manage notifications in your GitHub account settings. Watch or unwatch repositories to control alerts, and customize email or web notifications.",
+        "Use the 'Notifications' tab to see all your GitHub alerts."
+      ]
+    },
+    {
+      "tag": "github_contributions",
+      "patterns": [
+        "How to contribute to open source?",
+        "Find projects to contribute",
+        "First contribution on GitHub",
+        "Good first issues",
+        "How do I start contributing?"
+      ],
+      "responses": [
+        "Look for repositories with 'good first issue' or 'help wanted' labels. Fork the repo, make your changes, and submit a pull request.",
+        "Read the CONTRIBUTING.md file in the project for guidelines."
+      ]
+    },
+    {
+      "tag": "github_code_review",
+      "patterns": [
+        "How to review code on GitHub?",
+        "Code review process",
+        "Approve pull request",
+        "Request changes",
+        "How do I comment on code?"
+      ],
+      "responses": [
+        "Open the pull request, review the changes, and use the 'Review changes' button to approve, comment, or request changes.",
+        "You can comment on specific lines by clicking the '+' icon next to the code."
+      ]
+    },
+    {
+      "tag": "github_labels",
+      "patterns": [
+        "What are labels?",
+        "How to use labels?",
+        "Label issues and PRs",
+        "Custom labels",
+        "How do I organize issues?"
+      ],
+      "responses": [
+        "Labels help categorize issues and pull requests. You can create custom labels in the 'Labels' section of your repository's Issues tab.",
+        "Use labels like 'bug', 'enhancement', or 'documentation' to organize work."
+      ]
+    },
+    {
+      "tag": "github_milestones",
+      "patterns": [
+        "What are milestones?",
+        "How to use milestones?",
+        "Track project progress",
+        "Milestone vs label",
+        "How do I set deadlines?"
+      ],
+      "responses": [
+        "Milestones group issues and pull requests by project or deadline. Create a milestone in the Issues tab and assign issues to it to track progress.",
+        "Milestones are great for planning releases or sprints."
+      ]
+    },
+    {
+      "tag": "github_projects",
+      "patterns": [
+        "What are GitHub Projects?",
+        "Kanban board on GitHub",
+        "Track tasks visually",
+        "Project boards",
+        "How do I use Projects?"
+      ],
+      "responses": [
+        "GitHub Projects provide Kanban-style boards to organize issues, pull requests, and notes. You can create columns for 'To do', 'In progress', and 'Done'.",
+        "Projects help visualize and manage your workflow."
+      ]
+    },
+    {
+      "tag": "github_templates",
+      "patterns": [
+        "What are issue templates?",
+        "How to create PR templates?",
+        "Template for bug report",
+        "Standardize issues",
+        "How do I add templates?"
+      ],
+      "responses": [
+        "You can add issue and pull request templates by creating `.github/ISSUE_TEMPLATE` and `.github/PULL_REQUEST_TEMPLATE.md` in your repository.",
+        "Templates help standardize information and improve collaboration."
+      ]
+    },
+    {
+      "tag": "github_dependabot",
+      "patterns": [
+        "What is Dependabot?",
+        "How to enable Dependabot?",
+        "Automatic dependency updates",
+        "Security alerts for dependencies",
+        "How do I use Dependabot?"
+      ],
+      "responses": [
+        "Dependabot automatically checks for outdated or insecure dependencies and opens pull requests to update them.",
+        "Enable Dependabot in your repository settings or by adding a `dependabot.yml` file."
+      ]
+    },
+    {
+      "tag": "github_actions_marketplace",
+      "patterns": [
+        "Find GitHub Actions",
+        "Best actions for CI",
+        "Marketplace for actions",
+        "How to add actions?",
+        "Reusable workflows"
+      ],
+      "responses": [
+        "Browse the GitHub Actions Marketplace at https://github.com/marketplace?type=actions to find pre-built actions for your workflows.",
+        "You can add actions to your workflow YAML using the `uses:` keyword."
+      ]
+    },
+    {
+      "tag": "github_pages_custom_domain",
+      "patterns": [
+        "How to use custom domain with GitHub Pages?",
+        "Set up domain for Pages",
+        "Custom URL for my site",
+        "Connect domain to GitHub Pages",
+        "How do I add a CNAME?"
+      ],
+      "responses": [
+        "Add your custom domain in the repository's Pages settings and create a `CNAME` file with your domain name. Update your DNS records to point to GitHub Pages' IP addresses.",
+        "See https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site for details."
+      ]
+    },
+    {
+      "tag": "github_actions_secrets",
+      "patterns": [
+        "How to use secrets in Actions?",
+        "Store API keys securely",
+        "Environment variables in workflows",
+        "GitHub Actions secrets",
+        "How do I add a secret?"
+      ],
+      "responses": [
+        "Add secrets in your repository's Settings > Secrets. Reference them in workflows as `${{ secrets.SECRET_NAME }}`.",
+        "Never commit sensitive information directly to your repository."
+      ]
+    },
+    {
+      "tag": "github_workflow_triggers",
+      "patterns": [
+        "What triggers workflows?",
+        "on: push vs on: pull_request",
+        "Schedule workflows",
+        "Manual workflow run",
+        "How do I trigger a workflow?"
+      ],
+      "responses": [
+        "Workflows can be triggered by events like `push`, `pull_request`, or on a schedule using `on: schedule` with cron syntax. You can also trigger manually with `workflow_dispatch`.",
+        "See https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows for all options."
+      ]
+    },
+    {
+      "tag": "github_actions_matrix",
+      "patterns": [
+        "What is a matrix build?",
+        "Test on multiple versions",
+        "Matrix strategy in Actions",
+        "How to use matrix in workflow?",
+        "Run jobs in parallel"
+      ],
+      "responses": [
+        "Matrix builds let you run jobs with different combinations of parameters, like Python versions or OSes. Use the `matrix` keyword in your workflow YAML.",
+        "Example:\n```yaml\nstrategy:\n  matrix:\n    python-version: [3.7, 3.8, 3.9]\n```"
+      ]
+    },
+    {
+      "tag": "github_actions_cache",
+      "patterns": [
+        "How to cache dependencies?",
+        "Speed up workflows",
+        "Cache in GitHub Actions",
+        "actions/cache example",
+        "How do I use cache?"
+      ],
+      "responses": [
+        "Use the `actions/cache` action to cache dependencies and speed up builds. Example:\n```yaml\n- uses: actions/cache@v2\n  with:\n    path: ~/.cache/pip\n    key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}\n    restore-keys: |\n      ${{ runner.os }}-pip-\n```"
+      ]
+    },
+    {
+      "tag": "github_actions_artifacts",
+      "patterns": [
+        "How to upload artifacts?",
+        "Save build outputs",
+        "Artifacts in Actions",
+        "actions/upload-artifact",
+        "How do I download workflow results?"
+      ],
+      "responses": [
+        "Use `actions/upload-artifact` to save files from your workflow. Example:\n```yaml\n- uses: actions/upload-artifact@v2\n  with:\n    name: build-results\n    path: path/to/output\n```"
+      ]
+    },
+    {
+      "tag": "github_actions_badges",
+      "patterns": [
+        "How to add workflow badge?",
+        "Show build status in README",
+        "GitHub Actions badge",
+        "Status badge for CI",
+        "How do I add a badge?"
+      ],
+      "responses": [
+        "You can add a status badge to your README like this:\n```\n![CI](https://github.com/OWNER/REPO/actions/workflows/WORKFLOW_FILE/badge.svg)\n```",
+        "Replace OWNER, REPO, and WORKFLOW_FILE with your repository details."
+      ]
+    },
+    {
+      "tag": "no_answer",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understand your GitHub question. Could you rephrase?",
+        "Sorry, I don't have information on that GitHub topic.",
+        "Please clarify your GitHub-related question."
+      ]
+    }
+  ]
+}
